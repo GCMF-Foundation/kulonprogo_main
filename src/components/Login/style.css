@@ -1,0 +1,192 @@
+/* LOGIN */
+.main-container {
+    padding: 30px 40px;
+    background: #fff;
+    border-radius: 10px;
+    /* height: 100%; */
+
+}
+
+.main-container[data-page="Login"] {
+    height: 100%;
+}
+
+.main-container[data-page="Forgot"] {
+    height: auto;
+}
+
+.main-switch-btn {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.main .main-switch-btn Link {
+    font-weight: 500;
+}
+
+.switch-active {
+    background: #3F51B5 !important;
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.switch-btn-login, .switch-btn-register {
+    border: 2px solid #3F51B5;
+    height: 25px;
+    transition: background 0.5s, color 0.5s, padding-right 0.5s, padding-left 0.5s;
+    padding: 1px;
+    font-size: 12px;
+}
+
+.switch-btn-login {
+    border-radius: 15px 0 0 15px;
+    color: #3F51B5;
+}
+
+.switch-btn-login:hover {
+    color: #fff;
+    background: #3F51B5;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.switch-btn-register {
+    border-radius: 0 15px 15px 0;
+    color: #3F51B5;
+}
+
+.switch-btn-register:hover {
+    color: #fff;
+    background: #3F51B5;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.main-form input[type="email"], input[type="password"], input[type="text"] {
+    height: 40px;
+    font-size: 12px;
+}
+
+.rbt input {
+    padding: 0 1rem;
+}
+
+.main-form label {
+    font-weight: bold;
+    font-size: 12px;
+    color: #505254;
+    cursor: pointer;
+    margin-bottom: 0.3rem;
+}
+
+.main-form .form-check label {
+    font-size: 12px;
+    color: #505254;
+    cursor: pointer;
+}
+
+.main-form .forgot-password {
+    font-size: 12px;
+    text-align: right;
+    padding: 5px 3px;
+    font-weight: bold;
+}
+
+.main-form button[type="submit"] {
+    background: #3F51B5;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    font-weight: 700;
+    transition: font-weight 0.5;
+    transition: background 0.5s;
+    font-size: 14px;
+}
+
+.main-form button[type="submit"]:hover {
+    background: #303F9F;
+}
+
+.main-link {
+    font-weight: bold;
+}
+
+.input-password {
+    position: relative;
+}
+
+.input-password .input-group-append {
+    right: 0;
+    position: absolute;
+}
+
+.input-password .input-group-text {
+    border-radius: 0 .25rem .25rem 0;
+    height: 40px;
+    background: transparent;
+    border: transparent;
+}
+
+.form-check-input:checked {
+    background-color: #3F51B5;
+    border-color: #3F51B5;
+}
+
+.auth-describe h5 {
+    font-weight: bold;
+}
+
+.auth-describe p {
+    font-size: 13px;
+}
+
+.toggle-password {
+    background: #fff;
+    border-left: none;
+}
+
+.form-title h5 {
+    font-size: 26px;
+    font-weight:700;
+    margin-bottom: 0;
+}
+
+.form-title p {
+    font-size: 13px;
+}
+
+span[data-testid="not-have-account"] {
+    font-size: 13px;
+    color: #505254;
+}
+
+.link{
+    text-decoration: none;
+    color: #3F51B5;
+    transition: color 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+.link:hover{
+    color:#303F9F;
+}
+
+.back {
+    font-size: 13px;
+}
+
+@media (max-width: 767px) {
+    .main-container {
+        padding: 30px;
+        margin-bottom: 3rem;
+    }
+
+    .switch-btn-login, .switch-btn-register {
+        height: 30px;
+        padding: 4px;
+    }
+
+    .auth-describe {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+.toast-container {
+    right: 0;
+    padding: 0 10vh;
+    width: 100% !important;
+}
+
+@media (max-width: 767px) {
+    .toast-container {
+        width: 90% !important;
+        right: 5%;
+        padding: 0;
+    }
+
+    .toast {
+        width: 100% !important;
+    }
+}

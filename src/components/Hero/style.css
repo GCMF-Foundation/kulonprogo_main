@@ -1,0 +1,213 @@
+
+.hero-background {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    /* filter: blur(2px); */
+}
+
+.hero {
+    background: transparent;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.hero .content-container {
+    display: flex;
+    padding: 15vh 10vh;
+    min-height: 100vh;
+}
+.hero .content-container .left-side {
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.hero h1 {
+    font-weight: bold;
+}
+
+.hero .logo img {
+    width: 95px;
+    height: 110px;
+}
+
+.hero h5 {
+    font-size: 1.75rem;
+}
+
+.hero .left-side .title-container {
+    width: 88%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .right-side {
+    position: relative;
+    overflow-y: scroll;
+}
+
+.hero .right-side[data-page="Login"] {
+    min-height: 435px;
+}
+
+.hero .right-side[data-page="Forgot"] {
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.right-side::-webkit-scrollbar {
+	display: none;
+}
+
+.slogan {
+    /* margin-top: 25%; */
+    text-align: justify;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.slogan p {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.data-container {
+    padding: 5vh 25vh;
+    width: 100%;
+    color: #fff;
+}
+
+.mr-3 {
+    margin-right: 15px !important;
+}
+
+.border {
+    border: 1px solid #fff;
+}
+
+.logo-title {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .hero .content-container {
+        padding: 5vh 5vh;
+        min-height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero h5 {
+        font-size: 1.5rem;
+    }
+
+    .slogan p {
+        font-size: 1.3rem;
+    }
+
+    .hero .content-container .left-side {
+        align-self: center;
+
+    }
+
+    .hero .left-side .title-container {
+        position: relative;
+        width: 85%;
+    }
+
+    .hero .right-side {
+        position: relative;
+        align-self: center;
+    }
+
+    .slogan {
+        margin-top: 5vh;
+        text-align: justify;
+    }
+
+    .data-container {
+        padding: 0 5vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero .content-container {
+        display:block;
+        padding: 20px;
+    }
+
+    .main-container[data-page="Login"] {
+        height: fit-content;
+    }
+
+    .hero .right-side[data-page="Login"], .hero .right-side[data-page="Register"], .hero .right-side[data-page="Forgot"] {
+        height: fit-content;
+    }
+
+    .hero .right-side[data-page="Forgot"] {
+        justify-content: flex-start;
+    }
+
+    .hero .left-side[data-page="Login"], .hero .left-side[data-page="Register"] , .hero .left-side[data-page="Forgot"] {
+        display: none;
+    }
+
+    .slogan {
+        text-align: justify;
+    }
+
+    .deskripsi {
+        width: 70%;
+    }
+
+    .data-container {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    .logo-title {
+        display: flex;
+        color: #fff;
+        justify-content: center;
+    }
+
+    .logo-title .logo img {
+        width: 75px;
+        height: 90px;
+    }
+
+    .logo-title .deskripsi {
+        margin-left: 10px;
+    }
+
+    .logo-title h2 {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0;
+    }
+    
+}

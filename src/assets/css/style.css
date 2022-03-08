@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, nunito;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #2A4458;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.paper {
+  background: transparent;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+/* OTHER */
+.loading-container {
+    font-size: 13px;
+}
+
+.loading {
+    height: 14px;
+    width: 14px;
+}
+
+.invalid-feedback {
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.show-hide {
+    background: transparent;
+    border: none;
+}
+
+.icon-btn {
+    cursor: pointer;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    background-image: none;
+}
